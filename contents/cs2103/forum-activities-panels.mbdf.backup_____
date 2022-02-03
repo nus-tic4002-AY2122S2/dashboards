@@ -1,0 +1,2334 @@
+%%[This page was last updated on Jan 27 2022]%% [**<span class="text-warning">:octicon-eye:</span> indicates those _watching_ the forum** (kudos :+1:)]
+
+
+<panel type="info" header="### 1. DOMI.. JUN `@domlimm` (22 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Week 4 [W4.2] Class/Object Diagrams: Basics**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/48" expanded>
+
+Hello! Is anyone able to see the in-video quiz at the timestamp `16:50`? It's missing for mine
+</panel>
+
+<panel  header="**2. :fas-info-circle: Unable to run test file successfully**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30" expanded>
+
+Hello, I have been searching high and low for a solution to my problem but I can't seem to find one.
+
+This is under `A-JUnit`, been following this [guide](https://se-education.org/guides/tutorials/junit.html).
+
+When I do this `7b. Run the test (right-click on the class and choose Run DukeTest).`, I get the error down below.
+
+I believe it's due to my project structure, but I'm not sure how to fix it.
+
+Appreciate any help please! Thank you in advance!
+
+```
+Internal Error occurred.
+org.junit.platform.commons.JUnitException: TestEngine with ID 'junit-jupiter' failed to discover tests
+	at org.junit.platform.launcher.core.DefaultLauncher.discoverEngineRoot(DefaultLauncher.java:189)
+	at org.junit.platform.launcher.core.DefaultLauncher.discoverRoot(DefaultLauncher.java:168)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.junit.platform.commons.JUnitException: ClassSelector [className = 'duke.task.TaskTest'] resolution failed
+	at org.junit.platform.launcher.listeners.discovery.AbortOnFailureLauncherDiscoveryListener.selectorProcessed(AbortOnFailureLauncherDiscoveryListener.java:39)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolveCompletely(EngineDiscoveryRequestResolution.java:102)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.run(EngineDiscoveryRequestResolution.java:82)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver.resolve(EngineDiscoveryRequestResolver.java:113)
+	at org.junit.jupiter.engine.discovery.DiscoverySelectorResolver.resolveSelectors(DiscoverySelectorResolver.java:45)
+	at org.junit.jupiter.engine.JupiterTestEngine.discover(JupiterTestEngine.java:69)
+	at org.junit.platform.launcher.core.DefaultLauncher.discoverEngineRoot(DefaultLauncher.java:181)
+	... 8 more
+Caused by: org.junit.platform.commons.PreconditionViolationException: Could not load class with name: duke.task.TaskTest
+	at org.junit.platform.engine.discovery.ClassSelector.lambda$getJavaClass$0(ClassSelector.java:75)
+	at org.junit.platform.commons.function.Try$Failure.getOrThrow(Try.java:335)
+	at org.junit.platform.engine.discovery.ClassSelector.getJavaClass(ClassSelector.java:74)
+	at org.junit.jupiter.engine.discovery.ClassSelectorResolver.resolve(ClassSelectorResolver.java:66)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.lambda$resolve$2(EngineDiscoveryRequestResolution.java:134)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolve(EngineDiscoveryRequestResolution.java:185)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolve(EngineDiscoveryRequestResolution.java:125)
+	at org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution.resolveCompletely(EngineDiscoveryRequestResolution.java:91)
+	... 13 more
+Caused by: java.lang.ClassNotFoundException: duke.task.TaskTest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.junit.platform.commons.util.ReflectionUtils.lambda$tryToLoadClass$9(ReflectionUtils.java:790)
+	at org.junit.platform.commons.function.Try.lambda$call$0(Try.java:57)
+	at org.junit.platform.commons.function.Try.of(Try.java:93)
+	at org.junit.platform.commons.function.Try.call(Try.java:57)
+	at org.junit.platform.commons.util.ReflectionUtils.tryToLoadClass(ReflectionUtils.java:753)
+	at org.junit.platform.commons.util.ReflectionUtils.tryToLoadClass(ReflectionUtils.java:709)
+	... 28 more
+
+Process finished with exit code 254
+
+```
+
+Also, this is my project structure:
+
+![image](https://user-images.githubusercontent.com/46486515/150831248-89191113-f0a9-4bcd-90fd-e0da155a4750.png)
+
+</panel>
+
+<panel  header="**3. :fas-info-circle: Merging of Level-7 with master**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/22" expanded>
+
+Hello! Quite a silly and quick question but... We are supposed to merge `Level-7` with `master` before doing `Level-8` right?
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/6#issuecomment-1014581881" expanded>
+
+Hi Adrian! Could you please list the steps in how you brought the repo into your local machine? You mentioned you pushed but you pulled instead. A lil confused!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1016718136" expanded>
+
+I don't think so! According to that level
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1017065262" expanded>
+
+To add on, I used Enums for the different states of the bot e.g. When we send `delete X`, I will make use of the enum `DELETE` to set the current state of the bot.
+
+```java
+public enum States {
+  DELETE
+}
+```
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017219430" expanded>
+
+Hi @declanleeler ! I suppose you're running from the CLI instead of using IntelliJ's run button. Check these 2 issues (#1 and #11) out. They might help.
+
+Do you have any other java files other than `Duke.java`?
+
+When I ran `runtest.sh` from the CLI instead of using IntelliJ, I had to be in the `text-ui-test` directory.
+
+Inside the `runtest.sh`, Line 16 onwards:
+```shell
+# compile the code into the bin folder, terminates if error occurred
+if ! javac -cp ../src/main/java -Xlint:none -d ../bin ../src/main/java/*.java // This part!
+then
+    echo "********** BUILD FAILURE **********"
+    exit 1
+fi
+```
+
+Maybe you could double check the directory of all your java files based on the path specified in the run test script and amend accordingly.
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017246835" expanded>
+
+@declanleeler may I ask how does your directory look like now (The current directory that you've been showing in this thread)? Is it the same as when you forked?
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/22#issuecomment-1019486032" expanded>
+
+Alright! I'll decide on it again! Thank you!
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/22#issuecomment-1019490121" expanded>
+
+@damithc Hello prof, yes I have actually read that a few times and studied Levels 7 and 8 before working. I feel that the highlighted could mean after finishing Levels 7 and 8? Both levels don't seem to have much of a connection as @Yukun99 has mentioned, also based on what we need to implement for each level. 
+
+I understood the highlighted sentence in this way:
+```git
+From master:
+git checkout -b branch-Level-7 // Work on Level-7
+
+Then, once completing Level-7, again from master:
+git checkout -b branch-Level-8
+
+Then, we'll merge them one after another.
+```
+
+But prof I suppose, either way works (i.e. Doing Levels 7 and 8 respectively then merging or merging `Level-7` with `master` then doing `Level-8` and merging again)? :sweat_smile:
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/22#issuecomment-1019508159" expanded>
+
+Great, got it! Thank you prof! 😄 
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020742495" expanded>
+
+Sorry I missed that out. Here it is:
+
+```java
+package duke.task;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TaskTest {
+    @Test
+    public void dummyTest(){
+        assertEquals(2, 2);
+    }
+}
+```
+
+I followed the instructions in this [link](https://se-education.org/guides/tutorials/junit.html) (under Intellij, without gradle) closely and repeated the steps twice but :')
+
+A little more info: I started off iP using VSCode, and just moved to IntelliJ to do JUnit portion not sure if I need to generate any files for the project folder.
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020771943" expanded>
+
+> Have you tried right-clicking the "main" folder and selecting "Mark Directory as Sources Root"? You could also try renaming the package "duke.task" under "Refactor" to not include a period.
+
+Yes I have done that too. For the past hour, I have been trying to setup on VSCode too for JUnit but can't seem to get it working either, using this [(Extension Pack for Java (VSCode))](https://code.visualstudio.com/docs/java/extensions).
+
+I'm re-cloning the entire repo and re-doing the JUnit setup for IntelliJ. Will check back and update in 5 minutes! Thanks!
+</panel>
+
+<panel  header="**14 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020776631" expanded>
+
+> > You could also try renaming the package "duke.task" under "Refactor" to not include a period.
+> 
+> The `duke.task` in the screenshot is likely a UI optimization done by Intellij, rather than an actual dot being in the package name. ![image](https://user-images.githubusercontent.com/1673303/150904937-11aa52cb-8a0a-48f5-8880-6e0e1e86def3.png)
+
+@damithc @AAlghrairy Hello both, I'm not so sure if renaming will help...
+
+This is after right clicking on `duke.task` and `Refactor -&gt; Rename`
+
+![image](https://user-images.githubusercontent.com/46486515/150905964-6d25698b-0559-4965-9dea-ec55806ca358.png)
+
+</panel>
+
+<panel  header="**15 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020778974" expanded>
+
+It seems that I might have forgotten to configure the SDK for the project when loading into IntelliJ.
+
+Followed what @Spyobird said with trying out Step 8, `File -&gt; Project Structure -&gt; ...`,
+
+Realised this was empty. I remembered setting the Project's SDK when I was prompted for the first time though, there were 2 options I think I selected the wrong one :')
+
+![image](https://user-images.githubusercontent.com/46486515/150906389-13217529-10e2-43dc-afe9-445a1590965b.png)
+
+I'll write some tests for the `Task` portion and see if everything works out fine, and will close this thread.
+
+Thank you so much for your help! @AAlghrairy @damithc @Spyobird 🍻 
+
+Also, if anyone is using VSCode, did you manage to setup for JUnit tests? Would love to figure that out. Should've been quite straightforward with the Extension for Java extension but doesn't seem to work... 😭 
+</panel>
+
+<panel  header="**16 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020790870" expanded>
+
+Hello again, sorry last question before I close this issue...
+
+I can't seem to fix this error in the Build Output:
+
+![image](https://user-images.githubusercontent.com/46486515/150909122-f67ce839-29f2-4ebc-899a-9678fd933529.png)
+
+Any idea why this might be happening? I have set `main` as the dependency `File -&gt; Project Structure -&gt; ...`:
+
+![image](https://user-images.githubusercontent.com/46486515/150909208-6d5af302-2089-4a14-8395-39e44298eebb.png)
+
+<hr>
+
+Things I've tried:
+1. I have followed this here:
+```
+8b. Now that you have the modules main and test, you can set up the dependency using one of these options:
+
+Option 1: When you add a reference to the Duke inside the DukeTest, Intellij will flag it as an error and will give you an option (i.e., in the bulb icon that pops up) to add the main module as a dependency.
+```
+
+2. Rebuilding project & `File -&gt; Invalidate Caches -&gt; Restart`
+
+<hr>
+
+The codes for the test file:
+```java
+package duke.task;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TaskTest {
+    @Test
+    public void dummyTask() {
+        Task task = new Task("Test Task", 'T');
+
+        assertEquals("Test Task", task.getDescription());
+        assertEquals('T', task.getType());
+        assertEquals(false, task.getCompleted());
+    }
+}
+```
+</panel>
+
+<panel  header="**17 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020800447" expanded>
+
+Okay I've fixed all issues by running `rm -rf .idea *.iml` and then restarting IntelliJ. Everything works! Thank you all again! Closing this now!
+</panel>
+
+<panel  header="**18 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020832082" expanded>
+
+Hi @Btaykb ! It seems like you might have accidentally removed `ip` as the dependency.
+
+Could you go to `File -&gt; Project Structure` and see if you've these?
+
+![image](https://user-images.githubusercontent.com/46486515/150917805-0fd68738-d201-4e53-a2f1-d9aad5ebad3c.png)
+
+If not, you might have to redo the [entire setup](https://se-education.org/guides/tutorials/junit.html).
+
+Also, point 8 in the JUnit link is important.
+
+As mentioned by prof with the link, I faced quite a few issues when setting up. I've been doing mine in VSCode and moved to IntelliJ for the JUnit part.
+
+You could run `rm -rf .idea *.iml` with your terminal and restart IntelliJ, see if it works.
+
+Ensure you've saved all your files (i.e. Everything before `A-JUnit`) remotely, incase of rollbacks.
+
+Keep this thread updated, I'll check back!
+</panel>
+
+<panel  header="**19 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020871658" expanded>
+
+@Btaykb hello, not sure what went wrong there... That command basically does a kind of 'reset' so that when you restart IntelliJ, it generates those folders and its contents again.
+
+Yes, would be better if you redid the entire process!
+
+I checked your repo, everything looks good (as how it should be before doing `A-JUnit`). Basically, delete the entire project folder locally, then clone again and open in IntelliJ and follow the steps outlined in the JUnit setup!
+
+Let us know how it goes!
+</panel>
+
+<panel  header="**20 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/36#issuecomment-1021947425" expanded>
+
+I think we can commit it. I did!
+
+Ultimately, we'd just need the JAR file!
+</panel>
+
+<panel  header="**21 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/37#issuecomment-1021991472" expanded>
+
+Hi @joey-chance ! I think it is best if you could do this... Or at least I did it to overcome any differences when copying and pasting:
+
+```
+javac Duke.java; java Duke < input.txt > output.txt
+```
+
+Then just copying from `output.txt` to `EXPECTED.TXT`.
+
+Not sure if you've done it this way or it will help your case..
+</panel>
+
+<panel  header="**22 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/48#issuecomment-1023878005" expanded>
+
+Noted, thanks prof! 😃 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 2. ELLI..YONG `@Spyobird` (13 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1014056554" expanded>
+
+Hello,
+
+the issue you are facing may be due to [token authentication](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) for HTTPS. Perhaps you could try one of these solutions.
+
+Setting your authentication credential to the git remote URL:
+`git remote set-url origin https://yourusername@github.com/user/repo.git`
+
+Creating a personal access token:
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+Alternatively you can try and use SSH, which might be less hassle in the future.
+
+I am not a mac user but hope this may help resolve the issue.
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1014687316" expanded>
+
+I believe that you can set the expiration for the personal access token. I think the default duration is 30 days, but you probably can set it longer, even to no expiration I believe (although that might have security implications). The point of personal access tokens is to be temporal. This allows it to be unique and random which preserves its authenticity, however you could probably set one that covers the duration of the module so you don't have to worry about it too much.
+
+As for SSH, its benefit is so that you don't have to constantly re-enter your credentials whenever you want to use git commands, which can save with some hassle. Although that being said you could probably cache your personal access token for it to behave in a similar way (auto-filling passwords).
+
+I believe SourceTree has OAuth support too, which may just simplify the entire issue of connecting with HTTPS/SSH. However, I am not sure if there would be any other issues when using OAuth. At the end of the day, it is just using the method which works for you.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/8#issuecomment-1016260146" expanded>
+
+Hi,
+
+I believe that when you reverted a commit you ended up with a local branch with a detached HEAD. Usually HEAD points to the master branch (or whatever is the branch you are working on). The first error is just the name of the branch has spaces which is not allowed by naming convention. To return the HEAD back to the master branch, you might just be able to use a git checkout or git switch command. `git checkout master` may work. Pushing straight to the master branch may also return HEAD to master.
+
+Seeing that you reverted your commit, maybe you wanted to make changes in your new local branch (the detached HEAD). You can always merge your changes to the master branch once you are done, just remember to rename the branch to something that follows the conventions (https://www.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html).
+
+The second error you have is because you are pushing the 'Level-3' tag to the remote repo (github.com), but the tag already exits on the remote repo. You can either not push the tag (as it is already there) or delete the tag on the remote repo and push it again.
+
+I hope what I said is correct. Anyways hope it helps!
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/14#issuecomment-1017322745" expanded>
+
+Perhaps this may help you.
+https://stackoverflow.com/questions/22795894/cannot-resolve-method-in-java/22796097
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/15#issuecomment-1017331057" expanded>
+
+Your tags seem to be in order so I wouldn't worry too much about it. The error could be on the automated scripts end. Perhaps contacting the teaching staff may give you some closure. Do remember to include the A-&gt;whatever> tags too.
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21#issuecomment-1019389954" expanded>
+
+Hi, I don't think there is a right way to handle exceptions (although there are poorer ways ie. control flow). At the end of the day, whatever works best for you is good, although it is nice to keep OOP principles in mind. Coupled with the iterative breadth-first approach this module takes, I think it is also good practice to continually change the design of your code each week to meet the requirements. As for enums, use it whenever you want to! You could even use enums to differentiate the different exceptions/errors if you wanted to. I used enums in a very simple way to differentiate marked tasks and unmarked tasks, meanwhile I used polymorphism to differentiate exceptions. Hope it helps! :) 
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020487642" expanded>
+
+Hi, could we have a look at your TaskTest file too. Thanks.
+</panel>
+
+<panel  header="**8 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020772021" expanded>
+
+I think you may be missing the 'main' module as a dependency for test. Perhaps look at step 8 of the guide. Hopefully that resolves the error.
+</panel>
+
+<panel  header="**9 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/32#issuecomment-1021203534" expanded>
+
+Seems like you may have forgotten to `close` after you have written.
+</panel>
+
+<panel  header="**10 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/40#issuecomment-1022189705" expanded>
+
+Think the question is asking if the name of the variable is compliant based on its keywords. Do check naming section of https://se-education.org/guides/conventions/java/intermediate.html.
+</panel>
+
+<panel  header="**11 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/38#issuecomment-1022192990" expanded>
+
+Writing on each execution may be 'slower' and 'more inefficient', however, writing on termination may not result in the changes being saved in the event of unexpected termination of the program (e.g. crashes, ctrl+C). It is possible to handle those cases through error handling though.
+</panel>
+
+<panel  header="**12 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/42#issuecomment-1022438278" expanded>
+
+If your void methods still mutate some other variable, you can always test the mutated variable too see if the changes are expected. If not you can always change the void methods to boolean if you want assurance that a method has been called.
+</panel>
+
+<panel  header="**13 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/46#issuecomment-1023826882" expanded>
+
+Not sure if this is the solution but perhaps don't throw exceptions on your main method.
+
+Perhaps your classpath is also set wrong (see https://stackoverflow.com/questions/17408769/how-do-i-resolve-classnotfoundexception).
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 3. DECL.. LER `@declanleeler` (7 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: A-TextUiTesting: javac file not found**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13" expanded>
+
+Hello, I am using IntelliJ 2019.2, Java version 11.0.2.
+When I run the runtest.sh file I receive this error:
+<img width="756" alt="Screenshot 2022-01-20 at 4 03 48 PM" src="https://user-images.githubusercontent.com/50820543/150297678-0cbb35f5-2d58-44c8-ab68-d1a0b3cfc282.png">
+
+I tried to run the file from my terminal and it gives me the same error even though the files are definitely in the same directory. 
+<img width="930" alt="Screenshot 2022-01-20 at 4 04 53 PM" src="https://user-images.githubusercontent.com/50820543/150297812-7c5a11b3-a78b-4656-9a55-66565e356ec3.png">
+
+I did search for some answers and came across a Stackoverflow post (https://stackoverflow.com/questions/20587840/javac-file-not-found-first-java-usage-javac-options-source-files/20587857) that says I need to set JRE path but im not sure what that means?
+
+Hope someone can help me with this issue, thank you!
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017232147" expanded>
+
+Hi Prof @damithc , the same error occurs even when I use `javac .\Duke.java`
+<img width="289" alt="Screenshot 2022-01-20 at 4 30 39 PM" src="https://user-images.githubusercontent.com/50820543/150301778-71e4c331-be8c-422d-bcf7-ca9a89df1b8d.png">
+
+Hi @domlimm I tried IntelliJ and CLI but unfortunately I get the error on both. I tested out on `Duke.java` and `*.java` too but the error stays the same.
+
+Not sure if it is worth mentioning but when I use `cat Duke.java`, or any of the above files, I can see the contents of the files in my terminal.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017250253" expanded>
+
+@domlimm Sure! Here is the directory. I added an out folder to the one that was forked but other than that everything else is the same.
+<img width="241" alt="Screenshot 2022-01-20 at 4 56 17 PM" src="https://user-images.githubusercontent.com/50820543/150305933-606549e4-82f5-468e-9a33-e16da9adc801.png">
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017262312" expanded>
+
+@cheehongcw yup I am in the correct working directory. 
+
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017281168" expanded>
+
+IntelliJ was working fine up till this stag of the project so I don' think so since I am able to run the Java files from Intellij. The reason why I switched to terminal is because I was tracing through the javac file not found error in the shellscript and realized that I could not even run javac commands in my terminal. 
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017322323" expanded>
+
+@putaojuice and @s7manth I changed the permission but it didn't work. 
+@punnyhuimin I have deleted all java versions and reinstalled java 11. I can now javac files in terminal and intelliJ but the original shellscript error remains.
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017390492" expanded>
+
+> Hi there
+> 
+> I believe it is an issue with the way you run the .sh file.
+> 
+> What you should do is to navigate to your text-ui-test directory in terminal (either in IntelliJ or Mac's default terminal). When in the directory, run the following:
+> 
+> `./runtest.sh`
+> 
+> If you get a permission error, use the fix s7manth mentioned.
+
+Thanks so much @lzan98 and @s7manth that worked !
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 4. GOH ..XUAN `@zxgoh` (7 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Addressbook.jar opens, but the interface becomes cryptic**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44" expanded>
+
+Good day all, 
+
+I have installed addressbook.jar, and managed to open it. However, the interface presents itself as such:
+<img width="739" alt="Screenshot 2022-01-27 at 12 06 14 PM" src="https://user-images.githubusercontent.com/73661051/151290323-53944f26-79a0-42b0-8217-f271d056b65a.png">
+
+Not sure how to fix this issue, im currently running macOS 12.0.1, with java 17.0.1 installed. 
+Thank you!
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: Level-2 tag onwards not captured by ip progress dashboard after committing and pushing**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/15" expanded>
+
+Good day all, 
+
+After doing the various levels for week 2, I checked the IP progress dashboard but only saw that the Level-1 tag was captured. Level-2 to Level-6 were not captured, and I pushed the commits before the batch update, so means there was something wrong with commits. I'm not sure what is the issue that caused this, could someone provide me some advice?
+
+Thank you! 
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/15#issuecomment-1017568128" expanded>
+
+@Spyobird ahh, okay, thank you! It has been resolved already
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/15#issuecomment-1017569117" expanded>
+
+@damithc Thank you prof, the changes have been reflected already!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44#issuecomment-1022916474" expanded>
+
+> Hi @zxgoh, refer to #35
+
+Hi @SimJM , I deleted all other jdk and am left with only this:
+<img width="404" alt="Screenshot 2022-01-27 at 3 17 03 PM" src="https://user-images.githubusercontent.com/73661051/151309926-9a250b53-1624-484d-a44b-fa27baa639f0.png">
+
+When I type in java -version into terminal, terminal displays as such:
+<img width="787" alt="Screenshot 2022-01-27 at 3 15 44 PM" src="https://user-images.githubusercontent.com/73661051/151309772-c16e97b0-b5f2-4799-bccb-e896d1d8b15d.png">
+
+However, when I try to open addressbook.jar, it gives an error saying: 
+<img width="255" alt="Screenshot 2022-01-27 at 3 17 55 PM" src="https://user-images.githubusercontent.com/73661051/151310024-185acb53-1abc-4ac8-b352-c8d6786ff59e.png">
+
+I'm quite confused on how to open the jar file now with the current jdk 11. Thanks!
+ 
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44#issuecomment-1022986546" expanded>
+
+> Hey @zxgoh, not sure if it's relevant, but have you set the `JAVA_HOME` system variable? Assuming your shell is zsh, try adding this line to your `~/.zshrc` file:
+> 
+> `export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.14)`
+> 
+> On a side note, I am also experiencing the same text corruption issue. I have an m1 MacBook and have thus installed the recommended version of Java, but the text still appears broken. What else can I do to fix this? Thank you!
+> 
+> EDIT: I think I found a solution for my setup, I tried running `addressbook.jar` from the terminal instead of Finder. Calling `java -jar addressbook.jar` seems to work for me; the text doesn't get corrupted this way.
+
+@petermonky  Yep, I tried entering the command into terminal `java -jar addressbook.jar` and it worked well. Thank you!
+</panel>
+
+<panel  header="**7 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44#issuecomment-1022987794" expanded>
+
+> Hello @zxgoh, I'm a senior from a previous batch. From the screenshots it looks like you are attempting to launch the jar file by double clicking on it right? Have you tried the `java -jar name.jar` method yet? Also, make sure that you have downloaded the "JDK FX" and not "JDK" version as well.
+> 
+> Edit: realised @petermonky found the solution as well, as for the doubling clicking through finder you might need to dig into associating jar files with the correct runtime, from the descriptions it appears that macos is currently using another version of JDK.
+
+Hi @kouyk , yes, that solution that was suggested works well! Thanks for helping out too!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 5. KIM ..GBAE `@jbkim1999` (6 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: iP dashboard not reflecting tags & Asking for the right way to commit**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/17" expanded>
+
+Dear all,
+
+I have completed my iP week 2 tasks on time, but it seems that the dashboard is not reflecting my tags beyond Level-4.
+
+(So A-TextUiTesting, Level-5, and Level-6 are not reflected even after the dashboard was refreshed after I committed the tags already)
+
+Moreover, on the iP code dashboard, it shows that I have 0 lines of code written, which is not the case.
+
+I was wondering whether this is my fault on using the git commands.
+
+Here is how I committed after done with each increment.
+
+`git add .`
+`git commit -m "With some messages"`
+`git tag -a "tagName"`
+`git push origin tagName`
+
+I can see all my commits if I click on master branch -&gt; Tags -&gt; and appropriate level tags.
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/17#issuecomment-1018307296" expanded>
+
+Sorry, there was a typo in my post, the last command should have been `git push origin Tagname`, so in a sense, I believe I pushed the tags explicitly to my remote repository. But I can only see them if I click on master branch -&gt; Tags -&gt; and appropriate level tags.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/17#issuecomment-1018321363" expanded>
+
+@damithc 
+
+Hi prof, thanks for your input. But I got a little confused now.
+
+So if I do `git push origin tagName`, (this I followed our website), where does that commit go? 
+
+Do I have to push two times? (one for tag and one for master)
+
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/17#issuecomment-1018393587" expanded>
+
+Thank you so much for the answer! I'll be sure to check out the post as well.
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21#issuecomment-1019322507" expanded>
+
+For me, when considering todo, event, and deadline command, I check these conditions:
+
+Whether content of the task is specified. (an empty content, or delimiter follows immediately after the command)
+Whether the schedule is specified (delimiter not specified at all or after delimiter no schedule is written)
+
+For others, I only accept the "correct" conditions and all else will throw an exception.
+</panel>
+
+<panel  header="**6 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/38#issuecomment-1022419226" expanded>
+
+What I did was for an every operation that involved modifying the TaskList (e.g. adding a task or marking/unmarking), my Storage class would evoke save method and save the result back to the txt file. But now that I think of it, I believe I could only save the file for bye command, but like @Spyobird mentioned, sudden termination must be handled in such case.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 6. WU Z..IHAO `@zihaowrez` (5 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Branching levels 7 and 8 incorrectly**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/19" expanded>
+
+I think I have created the branches for levels 7 and 8 in a wrong way... Is there anything I can do with this? Or should I just continue? Will this affect the grading?
+
+<img width="403" alt="Screenshot 2022-01-22 221442" src="https://user-images.githubusercontent.com/67496158/150641951-becd646a-cba9-429f-a15b-0fb5e28fb31d.png">
+
+Thanks for helping!
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: Running runtest.bat in IntelliJ**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/1" expanded>
+
+Hi, I'm at A-TextUiTesting after level-4 of the iP. I encounter this error when running the "runtest.bat" file:
+```
+java.lang.UnsupportedClassVersionError: Duke has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main"
+```
+I'm using Windows. At first, this error occurs also when I run "runtest.bat" directly (double-click), so I downloaded and installed the Oracle OpenJDK 11.0.13 and added the path to the system environment variables. Now it works properly when I double-click to run it, but I need to compare the actual and expected outputs manually. However, the error still appears when I run it in IntelliJ, and it fails to produce the actual output, despite that I have changed both the JDK home path in File > Project Structure and the Boot Java Runtime (see the figure) to Oracle OpenJDK 11.0.13. I have also recompiled the Duke project.
+<img width="350" alt="Screenshot 2022-01-15 205618" src="https://user-images.githubusercontent.com/67496158/149622731-c32845eb-1eac-4afe-9fe4-24065dee51da.png">
+Any help is appreciated. Thanks.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/1#issuecomment-1013681840" expanded>
+
+I run it directly by clicking the green triangle:
+<img width="563" alt="Screenshot 2022-01-15 211651" src="https://user-images.githubusercontent.com/67496158/149623189-e800d8a4-2ddf-4b92-9ded-370163772aca.png">
+I'm not sure how to run it using IntelliJ's Terminal window. The first line gives an error:
+<img width="314" alt="Screenshot 2022-01-15 212220" src="https://user-images.githubusercontent.com/67496158/149623281-9e055eda-5544-4bb6-9420-ea64f6ef0afa.png">
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/1#issuecomment-1013691173" expanded>
+
+Rebooting worked... Thank you😂 
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/19#issuecomment-1019279938" expanded>
+
+Thank you prof!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 7. WONG..HONG `@cheehongw` (5 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: How to do unit tests for `Storage` class**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/50" expanded>
+
+Hello, how would one go about implementing unit tests for the methods in the storage module?
+
+For example, one might expect a `Storage::readFile` method to read from a given file and return the contents of that file. How to handle the need for an external file?
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017253661" expanded>
+
+@declanleeler Are you in the correct directory when running `javac`?
+
+Run `pwd` in your shell to print your current working directory. 
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020874495" expanded>
+
+@Btaykb
+
+You can't do `rm -rf` in windows powershell
+
+Try using a linux environment to do `rm -rf`. You can use WSL for this.
+
+edit:
+
+`rm -Recurse -Force` seems to be the correct syntax for powershell:
+https://ss64.com/ps/remove-item.html
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/35#issuecomment-1021934497" expanded>
+
+seems like an expected issue from AB3's issues page
+
+see: https://github.com/se-edu/addressbook-level3/issues/120
+
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/39#issuecomment-1022044065" expanded>
+
+In your terminal, cd to your `text-ui-test` directory, then run the following depending on what shell you are using:
+
+For powershell:
+<img width="376" alt="image" src="https://user-images.githubusercontent.com/72195240/151142799-60255a73-8b41-4b55-a20e-808257af5eac.png">
+
+For cmd:
+<img width="356" alt="image" src="https://user-images.githubusercontent.com/72195240/151142675-fabe8e09-8998-4786-bd28-004227f329ab.png">
+
+Judging by your filepath, I assume you are using WSL (which is unix-based), then you should aim to run the `.sh` file instead:
+<img width="361" alt="image" src="https://user-images.githubusercontent.com/72195240/151142587-90de65aa-c9fc-4927-8ab3-afe5b357f4b2.png">
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 8. ONG ..RIAN `@AdrianOngJJ` (5 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: How to run runtest.bat file?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/39" expanded>
+
+I was going through the Week 2 deliverables and got stuck at the following step:
+
+<img width="185" alt="image" src="https://user-images.githubusercontent.com/32859142/151137147-68186d0e-266a-4390-9bfb-542f307ec261.png">
+
+I tried to run `java runtest.bat` and `bat runtest.bat` but to no avail. The current directory would be `/mnt/c/Users/adria/Desktop/iP/text-ui-test`
+
+I also tried to right-click and run but i couldn't do it. 
+
+<img width="261" alt="image" src="https://user-images.githubusercontent.com/32859142/151137476-5667fc2b-2728-4320-9487-508a3d3b3bda.png">
+
+</panel>
+
+<panel  header="**2. :fas-info-circle: Warning: refname Level-1 is ambiguous**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/18" expanded>
+
+I've forked the iP code into my local device as the `master` branch. Then, I've created a new branch called `Level-1` to work on my level 1 requirements. However, when I tried to `git merge Level-1` while in the `master` branch, I faced this error: 
+
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/32859142/150633240-dc3b3714-0556-4589-a4e1-0b9ec16c034b.png">
+
+And when I checked my code in Github, the `master` branch did not merge with the `Level-1` branch. How should I fix this? Thank you
+</panel>
+
+<panel  header="**3. :fas-info-circle: Unable to push commits to Github**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/6" expanded>
+
+I was trying out _Week 2 - Topics - W2.4b: Tools -&gt; Git and Github -&gt; clone: Copying a repo_
+
+I've created a repo in my local machine but when I type `git push origin master`, it would not load and gave me this error: _This error is shown after typing in my username for Git._
+<img width="274" alt="image" src="https://user-images.githubusercontent.com/32859142/149763393-55487485-0db3-473b-8693-7914e7c7edfe.png">
+
+Here is a  screenshot of my git commands:
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/32859142/149764100-b868e9c2-ffec-4899-b8c6-c724c04aa370.png">
+
+What should I do to fix this? Thank you.
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/6#issuecomment-1015504651" expanded>
+
+Hello everyone! Sorry for the late response :]
+
+> Hi @AdrianOngJJ , broken pipe is sometimes due to a slow network. Could you try using a different internet connection and see if it solves the problem?
+
+@marcuschj I was using the school wifi back then and now using my home wifi and still face the same problem.
+
+> Hi Adrian! Could you please list the steps in how you brought the repo into your local machine? You mentioned you pushed but you pulled instead. A lil confused!
+
+@domlimm Sorry for the confusion. The issue I had was I couldn't push nor pull. It seems like I couldn't get or put anything top the remote server.
+
+> If that doesn't work, you can also try using SSH which is the more convenient imo as you don't have to type in your username and password every time you push (which may be the cause of the problem?). Set your remote as `git@github.com:se-edu/AdrianOngJJ/CS2103T-Test.git`, [create a new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), and add your public key to github so all subsequent pushes will not require your github username and password. I hope that'll help!
+
+@kevinchua6 Thanks for the reply! I did a little more digging and found out that I could either use the HTTPS method or your SSH method. I've studied the SSH method but I felt a bit too confusing (my coding command is bad). Here are some's a SS of my attempt to use the SSH method:
+![image](https://user-images.githubusercontent.com/32859142/149962765-1677d699-01bf-42f2-a6fc-b2ff8bde1220.png)
+
+However, I've found the solution by referring to [this](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git). Idk if changing the visibility of my repo from **Private** to **Public** made a difference.
+
+But thanks to all for helping!!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/18#issuecomment-1019138562" expanded>
+
+Ok I've found the solution. Sorry for not looking it further first. Here's what I've [found](https://stackoverflow.com/questions/12224773/refname-master-is-ambiguous/12225704#12225704).
+
+TL,DR: My tag shared the same name as the branch (which is `Level-1`, which confused Git. To fix, I [changed the name of the branch](https://stackoverflow.com/questions/12224773/refname-master-is-ambiguous/12225704#12225704) to `level1` in order to retain the tag `Level-1`. From there, I ran `git checkout master` to go back to `master` branch, followed by `git merge level1` to update the `Duke.java` file.
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 9. LI Z..G FU `@zhongfu` (5 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/1#issuecomment-1013689803" expanded>
+
+just checking, have you restarted IntelliJ (or maybe rebooted your entire computer) after updating your system env vars? i'm not too familiar with Windows, but there's a chance that IntelliJ is still using the old $PATH or something
+
+perhaps try adding `echo %PATH%` and `java -version` to runtest.bat, and running runtest.bat to see if what you get is what you're expecting
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/9#issuecomment-1016251308" expanded>
+
+duplicate of #3: yes, it's fine
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/11#issuecomment-1016973168" expanded>
+
+Try adding `C:\Users\kashi\.jdks\corretto-11.0.13\bin` [into your $PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)#:~:text=To%20add%20a%20path%20to%20the%20PATH%20environment%20variable&text=In%20the%20System%20dialog%20box,to%20Path%20and%20select%20it.). You might have to reopen your IDE (or cmd, or explorer.exe) or reboot your computer for the changes to take effect
+
+Or, maybe replace `javac` with `C:\Users\kashi\.jdks\corretto-11.0.13\bin\javac`
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25#issuecomment-1019670054" expanded>
+
+> I did what was stated in the youtube tutorial on the link on A-Jar level, which is to copy paste the path of the jar file followed by java-jar path/path/path
+
+is your current directory `C:\Users\user\OneDrive\Documents\CS\CS2103\ip`, or is it somewhere else? if that isn't your current directory, then change your directory to that before running `java -jar ...` (with the appropriate path for your jar file) again
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25#issuecomment-1019715007" expanded>
+
+> @zhongfu I don't think the issue is that the computer cannot find the jar file, rather, after it found it, it cannot navigate the file path for the reading of data.txt.
+
+that's not what I meant -- `src/main/data/duke.txt` is a relative path, so if your current/working directory isn't `C:\Users\user\OneDrive\Documents\CS\CS2103\ip`, your program isn't going to be able to find your file (or `src`, or `src/main`, etc)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 10. LIM .. JAY `@jaysmyname` (5 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: How do you make the batch file run with the same relative path?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/26" expanded>
+
+I've coded the file writing method such that it works when I run it on intelliJ, using the relative path "data/xxxx.txt", but when I run the runtest.bat file in text-ui-test, it produces errors since as it can't find the same path to the file.
+
+How do I go about fixing this?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Renaming Duke.java**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/3" expanded>
+
+Can we rename the java project file to anything else? Basically changing the name of the bot including the filename to Marcus.java for example.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/3#issuecomment-1013872232" expanded>
+
+Got it, thank you!
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1014154643" expanded>
+
+I had the same problem, and imo the best and easiest fix is from this thread:
+https://github.com/nus-cs2103-AY2122S1/forum/issues/13
+
+which has this answer:
+https://stackoverflow.com/a/68784631
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/26#issuecomment-1019800346" expanded>
+
+Ah, I did handle the case where the text file didn't exist, but not the ./data/ folder itself, thanks!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 11. PARK..UNHA `@B1LLP4RK` (5 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Infinite loop with Boolean wrapper class**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/43" expanded>
+
+Hi all, I was trying to use a while loop for the main logic in Duke.
+However I got into an infinite loop, where the "bye" command was supposed to end the java program.
+Below is a summary of the main loop.
+```java
+Boolean over;
+while(!over) {
+        if (command instanceof bye) {
+            itIsOver(over);
+        }
+    }
+}
+```
+
+the body of the method 'itIsOver' simply does the following.
+```java
+over = true;
+```
+
+From my understanding, the fact that Boolean is a wrapper class of boolean tells me that the 'over' variable in the main loop should change to a 'true' value. I failed to find a reason in the internet. Any help would be grateful! 
+</panel>
+
+<panel  header="**2. :fas-info-circle: the meaning of -u in git push -u {remote} {branch}**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/28" expanded>
+
+Hi all, I am trying to understand what the -u option does in the command 'git push -u {remote} {branch}'
+
+I know, the module website does specify
+
+>If pushing a branch you created locally to the remote for the first time, add the -u flag to get the local branch to track the new upstream branch:
+
+The also looked at the documentation, which says
+
+>-u
+>--set-upstream
+>For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull[1] and other commands. For more information, see branch.&gt;name>.merge in git-config[1].
+
+However, both didn't really get to me... I would be happy if someone can explain what 'track the new upstream branch' specifically means, or how does it affect what I can do, or my local/remote git repo!
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/28#issuecomment-1020111967" expanded>
+
+@lzan98 , @clement0010  Thank you both for answering my question and shedding light both on how it affects my future commands and theoretical aspect. The links were useful too. Have a great day:D
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/43#issuecomment-1022517835" expanded>
+
+@lkldev  Thank you for your suggestion! But... It seems unrelated with the if statement. To make sure, I already tested with a separate code that looks like the following.
+```java
+Boolean over;
+while(!over) {
+        System.out.println("if successful, this line will be printed only once");
+        itIsOver(over);
+    }
+}
+```
+This also resulted in infinite printing of the String.
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/43#issuecomment-1022823999" expanded>
+
+@lkldev that is crystal clear! Thank you:)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 12. PANG.. KER `@pyk595` (5 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Files generated when creating jar file**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/36" expanded>
+
+Hi, when I created the jar file, a file called `MANIFEST.MF` was created as well, are we supposed to commit this file or do we put it in gitignore?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Troubleshooting for runtest.sh after refactoring into packages💡**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/27" expanded>
+
+Hi everyone!
+
+I was working on the extension `A-More-OOP` and `A-Packages` so I refactored some of my classes. Even though I manage to get the expected output when running `Duke.main()`, I was unable to properly run `runtest.sh`, because it kept showing a runtime error. 
+
+After investigating, I realised that the bin still contained the deprecated class files from the previous increments, which caused the runtime error because the code is no longer valid. 
+
+For people with this error, you can run `rm -r ./bin` in console, and rebuild your `text-ui-test`. 
+
+Check and make sure that your path is correct for your `javac` and `java` command.
+
+For the `java` command, run with the `/bin packageName.javafile` instead of `/bin/packageName javafile`.
+
+Hope this helps!
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41#issuecomment-1022345795" expanded>
+
+Try running this in cli and re-opening intellij:
+`rm -rf .idea *.iml`
+
+If it doesn't work, check if the paths in your runtest.sh are still correct.
+
+Hope this helps!
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/36#issuecomment-1022835498" expanded>
+
+Okay, thank you!
+</panel>
+
+<panel  header="**5 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/36#issuecomment-1023878551" expanded>
+
+Noted, thanks Prof!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 13. DION..YING `@dionegoh` (4 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: runtest.sh encountering build failure after changing project structure**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41" expanded>
+
+Hi, 
+Just to check, does this project structure work? Currently under the Project tab, I only have 2 modules - src/main and src/test:
+<img width="330" alt="Screenshot 2022-01-26 at 11 53 56 PM" src="https://user-images.githubusercontent.com/77088875/151197989-bc8ab469-6ef6-41e2-ba77-499c4ba702f4.png">
+
+As per the instructions on the website, to view other subfolders in iP such as text-ui-test, I have to change tab to Project Files:
+ 
+<img width="351" alt="Screenshot 2022-01-26 at 11 41 36 PM" src="https://user-images.githubusercontent.com/77088875/151196600-77a5cbca-b64a-46b4-ad78-a7e7594ac746.png">
+
+However, when I try to run iP/text-ui-test/runtest.sh after completing the increment for A-JUnit, a build failure is thrown and I am not very sure if it is because of my project structure. 
+
+<img width="985" alt="Screenshot 2022-01-26 at 11 51 52 PM" src="https://user-images.githubusercontent.com/77088875/151198529-85e12a11-1ca6-4689-a10c-9e8a667e4966.png">
+
+
+Is iP supposed to be a module, and both src/main and src/test modules inside iP? If so, is there a way for me to rectify my current project structure?
+
+Thank you so much!! :)
+
+
+
+
+ 
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41#issuecomment-1022415523" expanded>
+
+Thanks! :) After running the command and re-opening intellij, my file structure looks like this:
+<img width="296" alt="Screenshot 2022-01-27 at 12 56 08 AM" src="https://user-images.githubusercontent.com/77088875/151209815-984b8c78-4636-43ae-b535-09ce90ab2989.png">
+
+However, running runtest.sh is still throwing a build failure. This is the path in my runtest.sh, and it seems correct when I check it against my file structure. Is there something that I may be missing out on?:
+ 
+<img width="710" alt="Screenshot 2022-01-27 at 12 54 54 AM" src="https://user-images.githubusercontent.com/77088875/151209985-feaf4910-9870-4f99-8d7e-617b11e4458c.png">
+
+
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41#issuecomment-1022456168" expanded>
+
+Right perhaps so! I did not test the file after introducing the pikabot package. Should the path in runtest.sh be modified after introducing the pikabot package? Thank you! 
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41#issuecomment-1022788904" expanded>
+
+Ah I see!! It works now after updating the path and the commands! Thank you so much for your help :)) 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 14. RYAN.. LEE `@ryanwalterlee` (4 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Jar file cannot find path**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25" expanded>
+
+As stated in the moreOOP level, a storage class is needed to handle file reading and writing.
+
+The thing is, when i run duke.main, it works, but upon creating the jar file, it gives the error
+
+"Exception in thread "main" java.io.IOException: The system cannot find the path specified
+        at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+        at java.base/java.io.File.createNewFile(File.java:1043)
+        at duke.Storage.readFile(Storage.java:13)
+        at duke.Duke.main(Duke.java:21)"
+
+This means that the file path to be read which is "src/main/data/duke.txt" works in run duke.main but not in the jar file. 
+
+I suspect that it has something to do with how the artifact settings are set and where the manifest.mf file is.
+
+Currently my folder structure looks like that, not sure if main is supposed to be a module (after doing A-JUnit)
+![image](https://user-images.githubusercontent.com/88182652/150692961-053ebc62-908c-4bed-9aac-367219ecdf7a.png)
+
+On that note, if we are stuck on a level, can we do the next levels first? Will we be penalized by the grading script?
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25#issuecomment-1019659118" expanded>
+
+I did what was stated in the youtube tutorial on the link on A-Jar level, which is to copy paste the path of the jar file followed by java-jar path/path/path
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25#issuecomment-1019677093" expanded>
+
+@zhongfu I don't think the issue is that the computer cannot find the jar file, rather, after it found it, it cannot navigate the file path for the reading of data.txt.
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/25#issuecomment-1019802422" expanded>
+
+Solved: created JAR file out of main module (not ip module), also reconfigured the storage class to create a data folder + duke.txt folder in it if it does not exist so that if someone else downloads the JAR it can still be used. Thanks all for the help :)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 15. BENJ.. BIN `@Btaykb` (4 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Issue with project after adding new main module**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31" expanded>
+
+Hi prof and classmates, I seem to have an issue while following the instructions for adding JUnit support for my project. More specifically after deleting the extraneous module and creating the new main module, my imported packages within my project no longer work.
+
+![Screenshot (127)](https://user-images.githubusercontent.com/77221233/150916362-49ce830e-3157-49a3-8e11-043b55b70b62.png)
+
+![Screenshot (128)](https://user-images.githubusercontent.com/77221233/150916457-57e969bc-2f27-4f5a-b4a2-bea84d14b001.png)
+
+![Screenshot (129)](https://user-images.githubusercontent.com/77221233/150916747-b3ed7b72-7bbf-4e97-a2fa-6f8a1465a21a.png)
+
+As seen above, I have to change all my package names to include another duke to all my package names. I was wondering if anyone knows the actual cause and solution to this issue. Thanks !
+
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020869130" expanded>
+
+Thanks @damithc and @domlimm for the responses! I tried running rm -rf .idea *.iml but ran into an issue. 
+![Screenshot (130)](https://user-images.githubusercontent.com/77221233/150924934-77559d15-008f-4d04-862d-5b3637e91345.png)
+
+Also, upon checking, it does appear that I have deleted ip as a dependency as I misunderstood the point on deleting any extraneous module before adding the main module in the JUnit guide.
+![Screenshot (131)](https://user-images.githubusercontent.com/77221233/150925236-0a1f64f3-4c9e-4b7e-80a3-83daa967be97.png)
+
+So in this case, I would have to set up the ip module again before restarting the steps outlined in the JUnit setup ? 
+
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020908750" expanded>
+
+Hmm, I tried both running rm -rf .idea *.iml on WSL and also deleting my project and cloning again, but still could not fix the issue..
+![Screenshot (136)](https://user-images.githubusercontent.com/77221233/150937537-088acbd2-d8d5-459e-9d57-600dbd5419af.png)
+
+
+My ip module is back now. 
+![Screenshot (135)](https://user-images.githubusercontent.com/77221233/150936104-e10036c9-3f85-47fa-9080-680cadbe9419.png)
+
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/31#issuecomment-1020923621" expanded>
+
+@damithc oh wait. Yup that was the issue all along! Apparently at some point through the JUnit setup, duke was added as a package prefix, which caused all my package names to include that extra duke. 
+
+Thanks all for the inputs and responses! Will redo the setup again and see if anymore issue persists before closing the issue. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 16. TAN ..U QI `@yuqitanyq` (4 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Issue pushing a commit on SourceTree**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4" expanded>
+
+Hey everyone,
+I am trying to push my commit to origin on SourceTree, but somehow SourceTree keeps giving me this error:
+
+'git -c color.branch=false -c color.diff=false -c color.status=false -c diff.mnemonicprefix=false -c core.quotepath=false -c credential.helper=sourcetree push -v --tags origin refs/heads/master:refs/heads/master 
+Pushing to https://github.com/yuqitanyq/ip.git
+remote: Permission to yuqitanyq/ip.git denied to yuqitanyq.
+fatal: unable to access 'https://github.com/yuqitanyq/ip.git/': The requested URL returned error: 403
+Completed with errors, see above'
+
+I am a mac user and for some reason, SourceTree keeps asking for keychain access on my mac when I push my commit, but after giving access this error just pops up.
+
+I've tried googling and managed to find a thread on this issue on Atlassian:
+[https://community.atlassian.com/t5/Sourcetree-questions/Unable-to-push-a-commit-to-Github-repository/qaq-p/1034485](url)
+
+but am still not really sure how to make it work. Has anyone who is a mac user been able to use HTTPS as your protocol and still manage to push your commit without seeing this error?
+
+Thank you.
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1014358570" expanded>
+
+> Hello,
+> 
+> the issue you are facing may be due to [token authentication](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) for HTTPS. Perhaps you could try one of these solutions.
+> 
+> Setting your authentication credential to the git remote URL: `git remote set-url origin https://yourusername@github.com/user/repo.git`
+> 
+> Creating a personal access token: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+> 
+> Alternatively you can try and use SSH, which might be less hassle in the future.
+> 
+> I am not a mac user but hope this may help resolve the issue.
+
+@Spyobird for the first method, is it a long-term solution? Or is it a short-term solution like the personal access token? I tried the personal access token method and it worked haha. But since the token has an expiry date it's a short-term solution, right?
+
+I wasn't really sure how to do the first method, does this mean that if I were to do the first method, I would have to type `git remote set-url origin https://yuqitanyq@github.com/user/ip.git` in my terminal? 
+
+Are both solutions short-term solutions and ssh is the one that will work for every repo in the future if I use source tree?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1014360047" expanded>
+
+Thanks though everyone @HolmesJJ @Spyobird @jaysmyname who contributed! The personal access token definitely works!
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/4#issuecomment-1017184123" expanded>
+
+Oh, @Spyobird mine was initially OAuth together with HTTPS in source tree preference settings, but i think the password login credential authentication did not work. 
+
+Thanks though! 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 17. LI K..NGLI `@lkldev` (4 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21#issuecomment-1019362727" expanded>
+
+Hi, interesting question about enums! I was trying out using enums for the various commands and I decided to use two enums to help me handle the commands. The first enum `ActionType` would be to group the command into various types, such as `READ`, `UPDATE`, `ADD`, and `NO_ACTION`. The next enum `CommandAction` would be to create all the commands (`todo`, `list`, `deadline` etc) and tie them accordingly to `ActionType`. This enum will also contain information such as their required arguments etc. This way, I can easily use a hashmap to tie the input to the right command (and its arguments) and when handling exceptions, I can handle by their `ActionType` for some cases. For instance, the `UPDATE` `ActionType` commands would include `mark`, `unmark`, and `delete`, which all would require an index. When parsing the command, I can do something like:
+```
+switch(ActionType) {
+    ...
+    case UPDATE:
+        if (args.length < 2) {
+            throw new IllegalArgumentException(String.format("The index of %s cannot be empty.", args[0]));
+        }
+    ...
+}
+```
+However, after looking at [se-edu/addressbook-level2](https://github.com/se-edu/addressbook-level2), I feel that enums may not be the best way to parse the commands, as creating the various commands as classes seem to allow for better polymorphism. Hopefully, this help with your question regarding how enums can be used!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/43#issuecomment-1022504417" expanded>
+
+Hi, have you tried and see if it goes into the if statement? You can debug the program or a simple print statement will do.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/41#issuecomment-1022514291" expanded>
+
+Hi, i believe you will need to update your path in runtest.sh. for the `javac` command, you should add `pikabot` to it, so something like
+```bash
+javac  -cp ..\src\main\java -Xlint:none -d ..\bin ..\src\main\java\pikabot\*.java
+```
+Then you should update the `java` command to run your package pikabot, e.g.
+```bash
+java -classpath ..\bin pikabot.PikaBot < input.txt > ACTUAL.TXT
+```
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/43#issuecomment-1022526953" expanded>
+
+Ah sorry, I misunderstood your question. In java, the [primitive wrapper classes are immutable](https://www.geeksforgeeks.org/primitive-wrapper-classes-are-immutable-in-java/). Hence, the Boolean over cannot be changed by another function if you pass by reference. For your code to work, `itIsOver` will have to return a boolean and assign it back to `over`, so something like `over = isItOver()`.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 18. SHIV..UPTA `@Shivang211` (4 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: remotes/origin/HEAD* my command line shows this instead of my current branch, what does this mean?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/12" expanded>
+
+I was trying to correct my ui-testing after which i commited the new changes. I did git add . -&gt; git commit -m "..." -&gt; git push, but instead of my changes being commited, my branch somehow changed to this and my changes weren't saved.
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/12#issuecomment-1017085959" expanded>
+
+> @Shivang211 perhaps give a screenshot of how things look in your repo e.g., how does the version graph looks in SourceTree?
+
+Prof I am on Mac OS and am using CLI for git 
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/12#issuecomment-1017090622" expanded>
+
+my git log looks like this, however no changes were saved in the corrected ui-testing commit and all my work for that was reverted back as soon as i pushed :
+
+```
+commit 632898b76d54027fb2503524b73832ecdf97883f (HEAD, origin/master, origin/HEAD)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Thu Jan 20 10:57:48 2022 +0800
+
+    corrected ui-testing
+
+commit 262bf7635a5f24416444e765127b9c603443fe42 (master)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Thu Jan 20 00:17:08 2022 +0800
+
+    abstracting print
+
+commit 21063f6445a8adf93b98069cbdac4c707d579ade (tag: Level-6)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Thu Jan 20 00:07:07 2022 +0800
+
+    added delete
+
+commit d73f32910b88376bddcc73b8410b871c6e7e6abc (tag: Level-5)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Wed Jan 19 20:24:41 2022 +0800
+
+    Added error checking
+
+commit 55951fce3f985de5bf0e0995cb02181f4583f19e (tag: A-TextUiTesting)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Wed Jan 19 14:53:16 2022 +0800
+
+    added ui-testing
+
+commit cf648d2b7f5d0caf0c00ed3224f0282c57b1362d (tag: Level-4)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Wed Jan 19 13:55:04 2022 +0800
+
+    Add level 4
+
+commit 95924bbcc0a60a2af21b1060b5a2eda99c1c6067
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Tue Jan 18 15:36:14 2022 +0800
+
+    Add event, deadline and todo classes
+
+commit 3cf77a31e603678b46acaa8bb9885cbaf08358c7 (tag: Level-3)
+Author: Shivang211 <shivanggupta2110@gmail.com>
+Date:   Tue Jan 18 14:42:21 2022 +0800
+```
+</panel>
+
+<panel  header="**4 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/12#issuecomment-1017096633" expanded>
+
+Thanks Prof, I will do that. I have resolved my issue, should I be closing it?
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 19. TAN ..RYAN `@ryantanlien` (3 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Do we still have to commit A-Enums if we dont use them?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10" expanded>
+
+Question is in the title.
+</panel>
+
+<panel  header="**2. :fas-info-circle: Changing Duke Class Name**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/9" expanded>
+
+Is it alright to change the Duke.java name to something more appropriate to our chat bot? Or do we keep it as Duke.java because of marking purposes or some such?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1017422031" expanded>
+
+> One interesting approach I found was to incorporate enums was to use validation functions inside of it.
+> 
+> There would be a public enum with all the input command types. The input strings would be validated inside an enum, and the subsequent logic can be run when the pattern of the input string matches with a particular command type.
+> 
+> Sort of like how it was demonstrated [here](https://stackoverflow.com/a/2457104).
+
+I think this was the method that I eventually used, as using the enums this way helps with refactorability in later iterations. Especially if the number of input command grows, behavior and exception handling can be tied to the Command enum. Thanks everyone for your help!. I will now be closing this thread.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 20. HO Q..NALD `@janald99` (3 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Error when pushing in SourceTree**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/8" expanded>
+
+Hey all,
+
+I am pretty unfamiliar to Git, and am facing troubles trying to push my commit to myfork(origin) on SourceTree as well. 
+This is what my current branching looks like, because I used the "reverse commit" function:
+![image](https://user-images.githubusercontent.com/77261002/150095146-db358f12-865f-4ba4-9ccd-0876f4338689.png)
+
+Now when I try to push, I have the option to push either 'master', or '(HEAD Detached from 35a4f9d)'. There are errors when pushing either.
+When I try to push the HEAD, it says:
+
+The Local branch '(HEAD detached from 35a4f9d)' (Remote branch = '(HEAD detached from 35a4f9d)') is invalid. Ref names must follow git ref-format rules: 
+https://www.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html
+Completed with errors, see above.
+
+
+When I try to push master, it says:
+
+Pushing to https://github.com/janald99/ip.git
+To https://github.com/janald99/ip.git
+ = [up to date]      master -&gt; master
+ = [up to date]      Level-1 -&gt; Level-1
+ = [up to date]      Level-2 -&gt; Level-2
+ ! [rejected]        Level-3 -&gt; Level-3 (already exists)
+error: failed to push some refs to 'https://github.com/janald99/ip.git'
+ hint: Updates were rejected because the tag already exists in the remote.
+Completed with errors, see above.
+
+So firstly, how do I attach the HEAD tag back? Or do I even have to do it - in which case, which branch should I push and of course, how do I fix the error?
+
+Thanks for the help in advance, even though there are so many errors in one request.
+
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/8#issuecomment-1016472283" expanded>
+
+Hi, thanks for the help! I am planning to push the head straight to the master branch, however, I am unable to locate the local branch (HEAD) to rename it. Any idea how i can rename this?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/8#issuecomment-1016493739" expanded>
+
+Thanks prof, I have fixed this issue! The link has provided great help.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 21. SIM ..MING `@SimJM` (3 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/35#issuecomment-1022166960" expanded>
+
+@garethkoh I encountered the same problem and managed to resolved it by downloading the v0.2.0.ea instead of the latest version v0.2.1.ea. https://github.com/se-edu/addressbook-level3/releases
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/35#issuecomment-1022356647" expanded>
+
+@damithc Noted. Thank you for the clarification. :)
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44#issuecomment-1022855186" expanded>
+
+Hi @zxgoh, refer to https://github.com/nus-cs2103-AY2122S2/forum/issues/35 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 22. YUSU..MUSA `@yusufaine` (3 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: level-5 extension: Error-handling, edge cases, and enum conventions**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21" expanded>
+
+This is more of an "extension" of Level-5, and maybe enums.
+
+I was cleaning up some of my code before starting on week 3 stuff and was thinking about the error-handling portion and had the following questions:
+
+1. What are the edge cases you guys considered?
+    * These are mine (on top of the given example):
+      * out of bounds
+      * no delimiters (`/at` or `/by`)
+      * index not being a number
+2. How did you guys organise the error-handling portion for yours?
+3. Is there a convention for error-handling?
+4. How do you _actually_ use enums?
+
+Currently I'm just throwing `DukeExceptions` with the respective messages and tried to account for the edge cases but that doesn't seem "right".
+
+I've also separated my "commands" into an enums class and did all the responses and error-checks there. 
+
+I was thinking that this was the way as it would clean up a the main Duke and it _felt_ like enums was where all the responses/actions (mark/unmark/delete) _should_ happen. During the code clean-up, however, I realised that all I'm doing is just making it messier in my enums class (example below), and had me thinking about how to properly (conventionally) approach this.
+
+```java
+public void toggleMarkResponse(List<Task> taskList, String cmd, String toggleIdx) throws DukeException {
+    if (taskList.isEmpty()) { throw new DukeException("The list is empty!"); }
+    if (!argumentsCheck(toggleIdx)) { throw new DukeException("Invalid number of arguments!"); }
+
+    // checks input to see if it's a number, throws DukeException if it can't be parsed
+    int index = isValidInt(toggleIdx) - 1; 
+    if (!isValidIndex(index, taskList.size())) { throw new DukeException("Entry out of range!"); }
+
+    {... mark/unmark logic ...}
+
+    {... all the System.out stuff ...}
+}
+```
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21#issuecomment-1019404509" expanded>
+
+@jbkim1999 thanks for pointing out regarding the content of task and the schedule, that slipped my mind! (Looks like I'll have to add 2 more conditions 😆 )
+
+---
+
+@lkldev I think your approach might be the way, at least from a code-organisation perspective. I wanted to do something similar but opted not. I gave it some thought and realised that it might look cleaner, but that's adding another "layer" of passing arguments, which isn't necessarily bad, but I've had the bad habit of over-complicating simple tasks (which is also why I posted this question to see if what I had was over-engineered 🤣 ). 
+
+> after looking at se-edu/addressbook-level2, I feel that enums may not be the best way to parse the commands
+
+Agreed! But while polymorphism (and cleaner code) is off the table, overloading still can be used, though it is not as ideal, and I personally got very confused and resorted to making different exceptions/responses according to the respective enums.
+
+I've actually done something similar to yours --
+<details>
+<summary> Click here to see the code </summary>
+
+``` java
+switch (inputCmd) {
+// ...
+case TODO:
+case EVENT:
+case DEADLINE:
+    if (input.length == 2) { // here I've used .split(" ") to split the command from description
+        // subtaskResponse checks the enum and creates the respective events 
+        // + checks for delimiters, and list size
+        inputCmd.subtaskResponse(taskList, input[1]); 
+        break;
+    } else {
+        throw new DukeException("Task description cannot be empty!");
+    }
+// ...
+}
+```
+
+</details>
+
+---
+
+@Spyobird thanks for sharing your views on this too! This is my first time really building anything and I was worried that I might have done some "bad practices" regarding enums. I should probably take a look at how you (and @lkldev) used polymorphism to differentiate exceptions as it sounds cleaner 😄 .
+
+---
+
+I'll be leaving this open for a while more in case anyone wants to chime in, and will close it by the end of today if there are no further discussions.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/21#issuecomment-1019499149" expanded>
+
+@Yukun99 I _think_ that might be the way to go, thanks for sharing!
+
+Will be closing this issue now. Again, thanks everyone for your insights 😄 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 23. TOH ..QING `@tzhan98` (3 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Gradle causing code to not run**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/34" expanded>
+
+I messed with gradle and now it seems that none of my code will run. I tried to checkout my last commit but the issue persists.
+my file 'gradlew' and 'gradlew.bat' is highlighted red if that matters.
+
+
+Error: 
+```java
+Task 'Duke.main()' not found in root project 'ip'.
+
+* Try:
+Run gradle tasks to get a list of available tasks. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'Duke.main()' not found in root project 'ip' < 112 internal lines >
+
+```
+
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/34#issuecomment-1021731055" expanded>
+
+![image](https://user-images.githubusercontent.com/77192480/151081492-2f43698e-d5a8-4fa5-b6c0-e6decaf6dc65.png)
+I do not have the build.gradle file in my project.
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/34#issuecomment-1021745342" expanded>
+
+Fixed the issue by cloning a new repo to local machine and creating a new configuration for it.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 24. LIM ..ERRY `@TypeDefinition` (3 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Java Coding Standard for Boolean Methods/Variables Confusing.**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/29" expanded>
+
+According to the Java coding standard for this module, boolean variables/methods should be named to sound like booleans.
+```
+//variables
+isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
+
+//methods
+boolean hasLicense();
+boolean canEvaluate();
+boolean shouldAbort = false;
+```
+But wouldn't this make the getters confusing with variables? Consider this:
+```
+public class Foo {
+    private boolean isDone;
+
+    public Foo() {
+        isDone = false;
+    }
+
+    // The method has the same name as the variable.
+    public boolean isDone() {
+        return isDone;
+    }
+
+    // ...
+}
+```
+
+While the above example is legal code, wouldn't this make it easy to mistake the variable and a function call of the getter?
+</panel>
+
+<panel  header="**2. :fas-info-circle: Must our forks be named the same as the original repo?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/7" expanded>
+
+Are you allowed to rename it? To let's say CS2103_IP, or is there some automated grading system that requires us to use the exact same name?
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/7#issuecomment-1016055554" expanded>
+
+
+
+> @TypeDefinition the fork should keep the original name `ip` (but you can rename files/packages).
+
+Thanks prof.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 25. WANG..IHAO `@9teMare` (3 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Unable to run Duke with Gradle**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/45" expanded>
+
+When I am trying to do Week 4 iP and run Duke with **Gradle (IP - Tasks - application - run)**, the following error message shows:
+```
+Execution failed for task ':run'.
+> Process 'command 'C:\Users\wangz\.jdks\corretto-11.0.14\bin\java.exe'' finished with non-zero exit value 1
+```
+It stack trace to:
+```
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':run'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:205)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:263)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:203)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:184)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:114)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:56)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$CallableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:416)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$CallableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:406)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$1.execute(DefaultBuildOperationExecutor.java:165)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:250)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:158)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:102)
+	at org.gradle.internal.operations.DelegatingBuildOperationExecutor.call(DelegatingBuildOperationExecutor.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:41)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:372)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:359)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:352)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:338)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.lambda$run$0(DefaultPlanExecutor.java:127)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:191)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.executeNextNode(DefaultPlanExecutor.java:182)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:124)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+Caused by: org.gradle.process.internal.ExecException: Process 'command 'C:\Users\wangz\.jdks\corretto-11.0.14\bin\java.exe'' finished with non-zero exit value 1
+```
+
+My SDK is Amazon Corretto version 11.0.14, I followed the following steps when I was trying to do the increment `A-Gradle`:
+- Merged the `add-gradle-support` branch to my master branch
+- Followed the tutorial for scenario 2 and then scenario 1 in this given link: [SE-EDU](https://se-education.org/guides/tutorials/gradle.html)
+- I could not even build my IP with Gradle initially, until I downloaded addressbook-Level-3 from [here](https://github.com/se-edu/addressbook-level3/tree/master/config/checkstyle), and copied the entire `config` folder to my IP working directory
+- Fixed all the checkStyle error, only then I can build my iP with Gradle
+
+### Any help regarding how to run Duke with Gradle is greatly appreciated!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/42#issuecomment-1022887513" expanded>
+
+If your `void` method actually prints something, i.e.`System.out.println()`, you can test your method with `PrintStream` and `ByteArrayOutputStream` class. Note that you need to set up the output stream before any tests with  `@BeforeEach` and tear down the stream after any tests with `@AfterEach`. After setting up, in your test method, simply call your method under test, and `assertEquals()` the expected printed string with your `ByteArrayOutputStream` object (note to convert the object to string and trim the automatically added \n with `toString().trim()`).
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/45#issuecomment-1023897558" expanded>
+
+Thank you @yongxiangng @limzk126 very much! This is indeed the issue, I managed to resolve it now.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 26. SAI ..ARTY `@s7manth` (3 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017287092" expanded>
+
+It might be due to the permissions set for the file `./runtest.sh`. Try changing the permissions by running this command in the terminal : `chmod +x ./path/to/runtest.sh`. Then you can move to the `text-ui-test` directory and directly run `./runtest.sh`. 
+
+This worked for me on Mac. 
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1017303742" expanded>
+
+One interesting approach I found was to incorporate enums was to use validation functions inside of it. 
+
+There would be a public enum with all the input command types. The input strings would be validated inside an enum, and the subsequent logic can be run when the pattern of the input string matches with a particular command type. 
+
+Sort of like how it was demonstrated [here](https://stackoverflow.com/a/2457104).
+</panel>
+
+<panel  header="**3 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/17#issuecomment-1018305466" expanded>
+
+Did you push your code to the remote repository? If not, then the code won't be reflected on your `ip` repository. In addition, you might need to push the tags explicitly as well. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 27. TAN ..HOWE `@goalfix` (2 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Accidentally did fast forward merge - How to fix?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/24" expanded>
+
+Hey everyone, I think I accidentally did a fast forward merge instead of following the instructions specified in Week 3's project.
+
+<img width="576" alt="Screenshot 2022-01-23 at 11 42 14 PM" src="https://user-images.githubusercontent.com/54658569/150686441-dd742aa9-3f45-4c8c-bda1-f3d8405ddeb1.png">
+
+
+I have a couple questions:
+1) Could someone more experienced confirm that I have done a fast forward merge between `master branch` and `branch-Level-7`?
+2) Is it possible to "revert back" to the state of level 6, in order to do it in the correct manner?
+3) How should I go about tagging for level 7? Because I did not create an extra merge commit, would it be okay to tag it in the fast-forwarded merge instead?
+
+I was trying to follow the steps not to do a fast forward merge, but I got this window instead and just continued.
+![Screenshot 2022-01-23 at 11 40 54 PM](https://user-images.githubusercontent.com/54658569/150686402-60c47243-50e7-4543-9285-9a7b0d271cd2.png)
+
+
+Any help appreciated thanks!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/24#issuecomment-1019781663" expanded>
+
+Thanks Prof for the answer and tips!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 28. HO L..NZAN `@lzan98` (2 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017380970" expanded>
+
+Hi there
+
+I believe it is an issue with the way you run the .sh file. 
+
+What you should do is to navigate to your text-ui-test directory in terminal (either in IntelliJ or Mac's default terminal). When in the directory, run the following:
+
+`./runtest.sh`
+
+If you get a permission error, use the fix @s7manth mentioned.
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/28#issuecomment-1019963524" expanded>
+
+I will try and attempt to explain in simple terms using an example: 
+
+Let's say you want to push branch-Level-9 to GitHub. You run `git push origin branch-Level-9` (without the -u flag).
+The next time when you try to run `git pull`(while in branch-Level-9), you will be prompted with the following message:
+
+>There is no tracking information for the current branch.
+>Please specify which branch you want to merge with.
+>See git-pull(1) for details.
+>
+>    git pull &gt;remote> &gt;branch>
+>
+>If you wish to set tracking information for this branch you can do so with:
+>
+>    git branch --set-upstream-to=origin/&gt;branch> branch-Level-9
+
+This means you have to run the full command `git pull origin branch-Level-9` to pull the branch from GitHub (or configure git branch --set-upstream). 
+
+In contrast, if you ran `git push -u origin branch-Level-9` the first time, in future you can run simply run `git pull` from branch-Level-9 as it is being treated as `git pull origin branch-Level-9`(likewise for git push).
+
+Read more from StackOverflow [here](https://stackoverflow.com/questions/5697750/what-exactly-does-the-u-do-git-push-u-origin-master-vs-git-push-origin-ma/16018004#16018004). The top 3 answers are pretty well explained.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 29. CHEN..U AN `@putaojuice` (2 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017276858" expanded>
+
+Could it be due to a mac privacy setting issue? Like did you allow IntelliJ to access your folder where you put the ip project folder in?
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/32#issuecomment-1021922958" expanded>
+
+Try using File instead of FileWriter for your file variable.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 30. TIAN..XIAO `@snoidetx` (2 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Weekly Quiz Coding Standard Question**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/40" expanded>
+
+There is a question for us to choose if the variable name is compliant with coding standard:
+
+`final static int ...`
+
+May I ask for this question whether we only make choice based on the name of variable, instead of its keyword (such as `final`)?
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/40#issuecomment-1022402348" expanded>
+
+Thanks @Spyobird and prof! I understand that those keywords classify the variable as a constant which requires a certain naming convention. Actually I was wondering whether we need to follow certain order of the keywords (e.g. `static final` instead of `final static`) because I saw prof’s examples for the coding styles use `static final` instead.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 31. XING..HENG `@xzzz3` (2 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Is there a way to unit test methods with void return type?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/42" expanded>
+
+From the weekly topics, it seems that JUnit testing can only be used on methods that return something, since we use assert to check whether the expected output is the same as the actual output of the method.
+
+However, my implementation of Duke actually has quite some void return types in different classes. I tried to google and some suggested using Mockito's verify() function to do unit testing for void return types.
+
+Is there a way to do it with JUnit? Or do void return types not need unit testing? Any advice is appreciated!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/42#issuecomment-1022889649" expanded>
+
+Thank you!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 32. DAI ..ANLE `@ddx-510` (2 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/38#issuecomment-1022807435" expanded>
+
+Although both ways would be fine, but from the IP task description on [**save**](https://nus-cs2103-ay2122s2.github.io/website/schedule/week3/project.html)
+
+> Save the tasks in the hard disk automatically whenever the task list changes. 
+
+It means we need a `save` operation whenever there is a modification on `TaskList`, hence we should `save` after every command that modifies the `TaskList` (`mark`, `unmark`, `delete`, etc.)
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/36#issuecomment-1022815566" expanded>
+
+From the official java doc on [JAR file](https://docs.oracle.com/javase/7/docs/technotes/guides/jar/jar.html), the `MANIFEST.MF` contains the metadata for the JAR packaged. Since the JAR file is ignored, I think we could also ignore this file.
+
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 33. LYU ..TENG `@Rye-Catcher` (2 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Is it matter which user makes the commits or push tags?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/16" expanded>
+
+At the start, I accidentally made all my commits and pushed all the tags under another username configured on Sourcetree (which is different from my GitHub username). But the dashboard still shows I've done the corresponding items. Though I've re-do everything under the correct username, just out of curiosity, is it matter which user pushes tags and makes commits? 
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/16#issuecomment-1017624122" expanded>
+
+> @Rye-Catcher for the iP, we don't check the author as we assume only you will be pushing code to your fork.
+
+Got it. Thank you, Prof.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 34. ALEX..NWEI `@aceszhenwei` (2 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Merge branch branch-Level-7 not showing**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/20" expanded>
+
+I had merged branch-Level-7 with master and pushed. Subsequently, I merged branch-Level-8 with master, and had to manually resolve some conflicts in order to push. However, I see that I have only merged branch-Level-8 in my history.
+
+<img width="336" alt="Screenshot 2022-01-22 at 10 44 09 PM" src="https://user-images.githubusercontent.com/70692871/150643160-36ea75cc-afdb-4ba5-afcb-4a334c1aff68.png">
+ 
+However, my main code in master branch already has both changes from both branches committed to it already.
+
+<img width="450" alt="Screenshot 2022-01-22 at 10 45 34 PM" src="https://user-images.githubusercontent.com/70692871/150643207-0b09d637-e279-4439-8a1e-a67b026f935c.png">
+
+Will this affect the script? If so, what can I do to correct this?
+
+Thank you in advance!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/20#issuecomment-1019290583" expanded>
+
+Thanks for the clarification! Careless of me. I'll leave this open for prof to address the issue regarding the script.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 35. GARE..HENG `@garethkoh` (2 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: AB3 showing random text**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/35" expanded>
+
+Hi does anyone know why AB3 looks like this whenever i open it? When i type into the section that is supposed to say "enter command here", my text also appears incorrectly.
+
+ I am using MacOS Monterey and have Java 16 installed on my computer
+<img width="742" alt="Screenshot 2022-01-26 at 2 24 09 PM" src="https://user-images.githubusercontent.com/77238736/151113829-e0a16276-e8f5-4a50-a509-0e56bfc50145.png">
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/35#issuecomment-1022421016" expanded>
+
+@damithc Thank you prof, it works now!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 36. JOEY..ANCE `@joey-chance` (2 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Running UI-text testing results in difference between expected and actual after changing default Duke message**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/37" expanded>
+
+I had modified the "DUKE" greeting message to personalize it and designed a "JARVIS" greeting message instead. Here is the code for that.
+```
+String logo =
+                " ------    -------    -------   ---        ---   ---------    -------\n" +
+                        "|____  |  |   _   |  |   _   |  \\  \\      /  /  |___   ___|  |   ____|\n" +
+                        "     | |  |  |_|  |  |  |_|  |   \\  \\    /  /       | |      |  |____ \n" +
+                        " _   | |  |   _   |  |      _|    \\  \\  /  /        | |      |_____  |\n" +
+                        "| |__| |  |  | |  |  |  |\\  \\      \\  \\/  /      ___| |___    ____|  |\n" +
+                        "|______|  |__| |__|  |__| \\__\\      \\____/      |_________|  |_______|\n"
+                ;
+        System.out.println("Welcome home, sir.\n" + logo);
+```
+The output of this is shown in this image.
+![Screen Shot 2022-01-26 at 4 32 03 PM](https://user-images.githubusercontent.com/92976979/151129192-1837b486-3835-45f9-80df-e9d79b6525bb.png)
+However, when running my runtest.sh file, the expected and actual outcomes are different, and is seemingly caused by this new greeting message. The error is shown in this image.
+![Screen Shot 2022-01-26 at 4 33 11 PM](https://user-images.githubusercontent.com/92976979/151129348-661a6585-0f42-47ef-8ff2-6702b5814c14.png)
+I tried copy pasting the contents from my ACTUAL.TXT file to my EXPECTED.TXT file to test things out but I still receive the same difference. 
+I was wondering if anyone has any idea as to why there is this difference between the outputs. Thank you in advance.
+
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/37#issuecomment-1022049707" expanded>
+
+Hey @domlimm! Thanks for the advice, that solved it. Cheers!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 37. KASH..HNEY `@kxshxsh` (2 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: A-TextUiTesting:  javac is not recognized**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/11" expanded>
+
+Hi guys, I was doing the A-TextUiTesting section and whenever I try to run runtest.bat, I get the message below. 
+```
+cmd.exe /c runtest.bat
+********** BUILD FAILURE **********
+'javac' is not recognized as an internal or external command,
+operable program or batch file.
+
+Process finished with exit code 1
+```
+Originally my runtest.bat file was completely unchanged so I went ahead and replaced lines 10 and 18 with the following statements respectively:
+
+```
+javac  -cp C:\2103T\iP\src\main\java -Xlint:none -d C:\Users\kashi\.jdks\corretto-11.0.13\bin C:\2103T\iP\src\main\java\*.java
+java -classpath C:\Users\kashi\.jdks\corretto-11.0.13\bin Duke < input.txt > ACTUAL.TXT
+```
+
+There was still no change in the message. I'm not a 100% confident if those paths are what they require either so some guidance would be appreciated:) I also did do a quick google search and followed the steps on this link: https://www.java67.com/2015/07/javac-is-not-recognized-as-internal-or-external-command-program-batch-file.html#ixzz5WjtBMio9 but it didn't seem to work either:/
+
+Does anyone have any idea what I could be messing up or overlooking? I'm a Windows user. Thanks!!
+</panel>
+
+<panel  header="**2 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/11#issuecomment-1017117199" expanded>
+
+> Try adding `C:\Users\kashi\.jdks\corretto-11.0.13\bin` [into your $PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)#:~:text=To%20add%20a%20path%20to%20the%20PATH%20environment%20variable&text=In%20the%20System%20dialog%20box,to%20Path%20and%20select%20it.). You might have to reopen your IDE (or cmd, or explorer.exe) or reboot your computer for the changes to take effect
+> 
+> Or, maybe replace `javac` with `C:\Users\kashi\.jdks\corretto-11.0.13\bin\javac`
+
+Thanks @zhongfu !! The first method solved it:))
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 38. MOHA..USUF `@waffledood` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Java Enums & Git/GitHub💎**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/23" expanded>
+
+Hey all! As we are transitioning into Week 3 from Week 2, these 2 topics were ones I spent extra time on understanding. Here are some resources that I hope would be useful to you as they have been to me! 
+
+## Java Enums 
+As the last stretch goal of Week 2's Assignment involves the use of Enums, I was figuring out how Enums are written & can be structured to fit my implementation. The following [article](http://tutorials.jenkov.com/java/enums.html) provided an overview & had some helpful tips. 
+
+## Git/GitHub 
+I've personally followed Shiffman for his [Coding Challenges](https://youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH) & overall amazing & engaging content, but his [Git and GitHub for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) playlist can serve as a great introduction & refresher for Git/GitHub! I found his video on resolving merge conflicts easy to understand
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 39. PUN .. MIN `@punnyhuimin` (1 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/13#issuecomment-1017316066" expanded>
+
+Hi, could you check that java version 11 is set in your terminal? You can try following [this link](https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos) to see how to go about doing so.
+
+ If all else fails you might want to reinstall java 11.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 40. BRAN.. HAN `@brandonrhan` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Swaping tut from slot1 to slot2**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/2" expanded>
+
+Hi I am currently in tut slot1 and I want to swap to tut slot2, is anyone willing to swap with me. Thanks a lot!!!
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 41. NG H..JIET `@hsiaojietng` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: No result from printwriter into specified text file**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/32" expanded>
+
+I have a problem printing my output into the text file that I have specified.
+
+I have encapsulated the creation of the file reader and writer into a class as shown below.
+
+```java
+public class FileAction {
+    protected String filepath = "C:\\NUS\\CS2103\\iP\\data\\duke.txt";
+    protected FileWriter file;
+    protected PrintWriter writer;
+
+    public FileAction() throws IOException {
+        file = new FileWriter(filepath);
+        writer = new PrintWriter(file);
+    }
+
+    public void save(String cont) {
+        writer.write("Hello");
+        writer.write(cont);
+    }
+
+    public void changeFilePath(String fileName) {
+        filepath = fileName;
+    }
+}
+```
+
+Which is made used in the adding of tasks as shown below as 'f.save(t.toString());'
+
+```java
+public String add(Task t, FileAction f) {
+        StringBuilder res = new StringBuilder();
+        String line = "____________________________________________________________ \n";
+        tasks.add(t);
+        res.append(line).append("Got it. I've added this task: \n");
+        res.append(t.toString()).append("\n");
+        res.append("Now you have ").append(tasks.size());
+        res.append(" tasks in the list.\n").append(line);
+        f.save(t.toString());
+        return res.toString();
+ }
+```
+
+Additionally, the FileAction instance is supplied through an Action class which has an instance of FileAction created before use.
+ (Shown in this link: https://github.com/hsiaojietng/ip/blob/branch-Level-7/src/main/java/Action.java)
+
+Adding tasks such as 'todo Borrow books' runs the function save() without any errors, but I do not see any text created in the text file specified, is there a reason why?
+
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 42. ONG ..G QI `@chriswengqi` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Unable to find main class when trying to run JAR file**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/46" expanded>
+
+Hi! I am unable to run my JAR file because my main class Duke is not found. When I try to check my MANIFEST.MF file my Main-Class Duke cannot be resolved even though they are in the same directory. I've tried many ways to resolve this issue like moving my MANIFEST file and my jar file around the directory but none of them seem to work. Is there anybody who has faced the same problem? Been spending way too much time on this small increment.
+
+
+
+![image](https://user-images.githubusercontent.com/67186918/151472291-52088ff1-6ec3-4ac7-a9f4-70c4573587ee.png)
+
+![image](https://user-images.githubusercontent.com/67186918/151472274-9f02f099-593c-442e-a4bd-c033213d05e0.png)
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 43. LIM .. SEN `@bingsen0806` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Question regarding tracking system and doing tasks ahead**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/5" expanded>
+
+I have some questions regarding how the tracking system works and doing tasks ahead. In particular:
+
+**1.** If we complete Week X's in video quiz before Week X, will it be counted towards the "extra" participation for Week X. Also, do I need to answer all in-video quizzes of Week X to get the participation, or answering some of them will do?
+
+**2.** Are we allowed to complete iP tasks for week X before week X? For example, if I completed (some or all) of Week 3's task before Week 3, commit and tag before Week 3, and push to my fork only during Week 3, will my commits and tags be tracked?
+
+**3.** Under "Project Management" component for iP, one of the criteria is "submit some deliverables in at least 4 out of 5 iP weeks". Consider the scenario in question 2 above, will I be considered as "submitting some deliverables in Week 3" if I completed Week 3 tasks beforehand and only push in Week 3 (assuming I did not do any Week 4 tasks in Week 3)? What if, in addition to that, I complete some of all of Week 4's task in Week 3. Will I then be considered as "submitting some deliverables (week 4 tasks) in week 3"? 
+
+**4.** Do "deliverables" refer to only commits tagged with the given tags? In the case if I completed all tagged tasks for Week 6 in Week 5, there will be no more "tags" for me to complete. Can I submit some untagged commits in Week 6 to be considered as "submitting some deliverables in Week 6"?
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 44. ANG ..IANG `@yl-ang` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1017043106" expanded>
+
+Not sure if this is recommended but I used enum to define error strings and grouped them together.  This makes my program more organized in handling errors and easier for me to change my error strings (By looking up the enum and modifying the relevant error string).
+
+https://stackoverflow.com/questions/446663/best-way-to-define-error-codes-strings-in-java
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 45. SEAH..AMIN `@sbhbenjamin` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/10#issuecomment-1017075628" expanded>
+
+Another possibility is using enum to store the valid commands (i.e. list, todo, deadline, etc.). This allows for enums to be used as a validation tool, to check if the incoming input is a valid command based on the aforementioned fields. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 46. TAN ..I EN `@tanweien` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Unable to access other classes inside java folder**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/14" expanded>
+
+I have 2 other classes in ip/src/java, Task and TaskList. I am able to call methods from both classes in the main Duke class. However, I cannot call Task methods in TaskList and vice versa (cannot resolve method). String.format(...) also does not work in both Task and TaskList for some reason. Does anyone know how to resolve this issue? Thank you. 
+
+![Screenshot 2022-01-20 at 5 55 31 PM](https://user-images.githubusercontent.com/85757107/150315731-dc4dcdd3-8a81-40db-be71-1ab073ab1ab9.png)
+![Screenshot 2022-01-20 at 5 55 54 PM](https://user-images.githubusercontent.com/85757107/150315795-fa5b4da8-d75d-41e0-adde-be86fc290140.png)
+
+
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 47. EZEK.. KAI `@takufunkai` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/29#issuecomment-1020795493" expanded>
+
+Personally I don't see why this could be confusing. The client should not know and have anything to do with the `isDone` private boolean field, and the implementation shouldn't be using the `isDone()` public accessor method.
+
+And although there could be some scenarios where an accessor method is necessary, I feel that it is usually possible to refactor the code such that accessor methods are unnecessary. For example, instead of checking if a ToDo task is done, we can focus on what we need to do with that information, and request the ToDo class handle that instead. This way we don't have to do `isDone()` accessor.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 48. GOEL..SHIT `@goel-a` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Storing the tasks for Level-7**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/33" expanded>
+
+Hi, 
+
+ Could I clarify about the format of how we store the files for Level-7. Does it have to be a text based (.txt), or can we store it by using the Serializable interface which will result in the Task objects being stored in a .ser file ?
+
+Thanks!
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 49. ALBE..IONO `@albertsutz` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: Weekly In Video Quiz**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/49" expanded>
+
+Hello, I am just wondering whether there is any penalty if you make any errors during the in-video quiz. Since some of the topics were new to me, I am usually unsure about my answers. (And I see that there is no retaking the quiz)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 50. CLEM..HENG `@clement0010` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/28#issuecomment-1020006155" expanded>
+
+Adding on to what @lzan98 said, 'track the new upstream branch' means creating a connection between your new local branch and remote branch (upstream). See diagram below.
+
+![image](https://user-images.githubusercontent.com/56408987/150775287-c8fe53d3-0481-42e0-bb6e-4efdabab8cec.png)
+
+This connection lets you obtain information from your remote repositories, such as telling you if your commits are ahead/behind the remote branch. For example, in a project collaboration scenario, you will most likely be working on the same branch with other people and there will be frequent pushes on the same branch. Hence, when performing a "git fetch" command, you can bring the new commits from your remote repository and you can choose to merge them at will.
+
+Another reason is that you can perform git pull and push quickly as git already knows which upstream branch to push/pull from.
+
+Hope this helps =). You can read more from [here](https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch)
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 51. TONI..INGH `@tonishka` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/38#issuecomment-1022031848" expanded>
+
+Hello, 
+
+The way I did it was - whenever the user starts the program the data is loaded from the file to an ArrayList. Throughout the execution of the program the data manipulation takes place in the ArrayList and when the user types the exit command the data from the ArrayList is written back to the file. Writing back to file after every command may be too cumbersome, it is easier to write back to file in one go after the program has finished execution.
+
+TL;DR: I save the data on termination.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 52. JUNG..SEOK `@petermonky` (1 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/44#issuecomment-1022963388" expanded>
+
+Hey @zxgoh, not sure if it's relevant, but have you set the `JAVA_HOME` system variable? Assuming your shell is zsh, try adding this line to your `~/.zshrc` file:
+
+`export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.14)`
+
+On a side note, I am also experiencing the same text corruption issue. I have an m1 MacBook and have thus installed the recommended version of Java, but the text still appears broken. What else can I do to fix this? Thank you!
+
+EDIT: I think I found a solution for my setup, I tried running `addressbook.jar` from the terminal instead of Finder. Calling `java -jar addressbook.jar` seems to work for me; the text doesn't get corrupted this way.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 53. AL G..AL S `@AAlghrairy` (1 posts) "  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/30#issuecomment-1020766542" expanded>
+
+Have you tried right-clicking the "main" folder and selecting "Mark Directory as Sources Root"? You could also try renaming the package "duke.task" under "Refactor" to not include a period.
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 54. ROH ..G GI `@robinrojh` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1 :fas-comment:**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/47#issuecomment-1023853246" expanded>
+
+It seems that you can call it if the test is in the same package. You can find some more details in https://junit.org/junit4/faq.html#atests_10
+
+However, this documentation is from junit4, so if it doesn't work, you can try this approach of creating a subclass that calls the protected method for testing purposes only. 
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 55. A H ..NIYA `@thikhinab` (1 posts) <span class=text-warning>:octicon-eye:</span>"  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: How are proctected method/classes tested using JUnit?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/47" expanded>
+
+May I know how protected method and classes are tested using JUnit in SE practice?
+</panel>
+
+</panel>
+
+
+<panel type="info" header="### 56. BIAN..YUQI `@Jacky142857` (1 posts) "  collapsed>
+
+
+<panel  header="**1. :fas-info-circle: What is the time that a task should be saved?**" popup-url="https://github.com/nus-cs2103-AY2122S2/forum/issues/38" expanded>
+
+For the save function, can I save the task when I terminate the application (when I type "bye"), or do I need to save the task whenever a command is being executed ? 
+</panel>
+
+</panel>
